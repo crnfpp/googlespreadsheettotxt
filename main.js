@@ -16,7 +16,7 @@ function downloadTXT() {
     }
     
   // Creating the file
-  var file = DriveApp.createFile("nomefile.txt",fileContent , "text/plain");
+  var file = DriveApp.createFile("filename.txt",fileContent , "text/plain");
   
   // A simple alert for our user. This make sense only if you're creating a Custom Menu aswell.
   var file_url = "https://drive.google.com/file/d/"+ file.getId() +"/view?usp=sharing"
